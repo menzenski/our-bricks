@@ -1,0 +1,19 @@
+{
+  "name": "ourbricks",
+  "description": "A community of LEGO collectors",
+  "main": "server.js",
+  "authors": [
+    "Matt Menzenski <https://github.com/menzenski>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/menzenski/our-bricks",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
