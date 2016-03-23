@@ -1,5 +1,6 @@
 {
   "name": "ourbricks",
+  "version": "0.0.1",
   "description": "A community of LEGO collectors",
   "main": "server.js",
   "authors": [
@@ -15,5 +16,16 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "appPath": "app",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "lodash": "^4.6.1",
+    "angular": "^1.5.2",
+    "json3": "^3.3.2",
+    "es5-shim": "^4.5.7",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.2",
+    "angular-resource": "^1.5.2"
+  }
 }
