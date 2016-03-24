@@ -1,0 +1,38 @@
+// COLORS
+// from http://viget.com/inspire/color-contrast
+$text-color: #373d3f;         // Raven
+$text-color-light: #f1f3f4;   // Lilia
+$primary: #093145;            // Darkest Indigo
+$primary-light: #3c6478;      // Lighter Indigo
+$accent: #efd469;             // Lighter Daisy
+$accent-dark: #bca136;        // Darkest Daisy
+$error-color: #cd594a;        // Lighter Ruby
+
+// SIZES
+$nav-height: 70px;
+$spacing: 8px;
+$radius: 3px;
+$small-font: 10px;
+$base-font: 14px;
+$large-font: 20px;
+$extra-large-font: 28px;
+
+// MISCELLANEOUS
+$border: 1px solid $primary-light;
+
+// MIXINS
+@mixin apply-base-color() {
+  background-color: $primary;
+  color: $text-color-light;
+}
+
+@mixin apply-accent-color() {
+  background-color: $accent;
+  color: $text-color;
+}
+
+// FUNCTIONS
+@function img($file) {
+  $url: "../images/#{$file}";
+  @return url($url);
+}

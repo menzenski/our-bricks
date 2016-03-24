@@ -1,0 +1,54 @@
+@import 'variables';
+
+.navbar {
+  z-index: 1000;
+  padding-top: 10px;
+  height: $nav-height;
+  background-color: $text-color-light;
+
+  .container {
+
+    a,
+    li a {
+      color: $ primary;
+    }
+
+  }
+
+  .navbar-brand {
+    margin-right: $spacing * 10;
+  }
+
+  #navbar {
+    background-color: $text-color-light;
+  }
+
+  .navbar-toggle {
+    border: 0;
+
+    &:hover,
+    &:focus {
+      background-color: inherit;
+    }
+
+    .icon-bar {
+      background-color: $primary;
+    }
+
+    &:not(.collapsed) {
+      background-color: inherit;
+
+      .icon-bar {
+        background-color: $primary;
+
+        &:nth-of-type(even) {
+          opacity: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,16 @@
+<div id="home-content">
+  <div class="action-wrap" id="primary-actions">
+    <input type="text" placeholder="Search notes" ng-model="search"
+        ng-change="requestNotes(search)">
+    <a class="button" href="#/new">Add a Note</a>
+  </div><!-- /#primary-actions.action-wrap -->
+
+  <div id="notes-list">
+    <note ng-repeat="note in notes"></note>
+
+    <div class="empty-message" ng-show="!notes.length">
+      No notes found. <a href="#/new">Write a new one!</a>
+    </div><!-- /.empty-message -->
+  </div><!-- /#notes-list -->
+
+</div><!-- /#home-content -->
